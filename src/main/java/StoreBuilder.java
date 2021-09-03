@@ -29,10 +29,10 @@ public class StoreBuilder {
         return this;
     }
 
-    public Store build() {
+    public Storage build() {
         if (products == null || products.isEmpty()) {
             throw new IllegalStateException("Список товаров пуст");
         }
-        return new Store(products);
+        return new Storage(products);
     }
 }

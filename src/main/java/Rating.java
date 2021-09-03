@@ -1,6 +1,6 @@
 //Для отсутствия магических чисел
 public enum Rating {
-     BAD, POOR, FAIR, GOOD, EXCELLENT;
+    BAD, POOR, FAIR, GOOD, EXCELLENT;
 
     public static Rating fromInt(int num) {
         return switch (num) {

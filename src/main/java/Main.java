@@ -4,10 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
         Basket basket = new Basket();
-        Store store = new Store();
+        Storage store = new Storage();
         store.print();
         //Вводим данные для фильтрации
-        Store filteredStore = filterStore();
+        Storage filteredStore = filterStore();
         filteredStore.print();
         //Добавляем фильтрованные товары в корзину
         filteredStore.getProducts().forEach(product -> basket.addToBasket(product, 1));
@@ -17,8 +17,8 @@ public class Main {
         filteredStore.getProducts().clear();
     }
 
-    private static Store filterStore() {
-        Store filteredStore = new Store();
+    private static Storage filterStore() {
+        Storage filteredStore = new Storage();
         Scanner scanner = new Scanner(System.in);
         while (true) {
             filteredStore.print();
